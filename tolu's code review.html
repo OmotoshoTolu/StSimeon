@@ -1,0 +1,644 @@
+<!DOCTYPE HTML>
+<head>
+	<meta charset="utf-8"/>
+  <title>St Simeon's Website</title>
+ <style type="text/css">
+   body {
+    font-family: "cambria";
+    transition: background-color .5s;
+    background-color: #151515;
+    border-top:0;
+    color:white;
+    margin:0px
+  }
+  .bac_img{height:500px;background:linear-gradient(to bottom, rgba(0,0,0,0),#151515), url('worship.jpg'); background-repeat:1;padding: 50px}
+  #style>h1{color:#fff;font-size:50px}
+  #col1,#col2{transition:1s all ease-in-out}
+  .dis{scale:0;transition:1s all ease-in-out}
+  .sho{scale:1;transition:1s all ease-in-out}
+    .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #main {
+    transition: margin-left .5s;
+    padding: 10px;
+    margin-top:20px;
+    padding-bottom:5px
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+
+  .sidenav a,
+  .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size:100%;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+
+
+  .sidenav a:hover,
+  .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+
+  .main {
+    margin-left: 200px;
+    font-size: 20px;
+    padding: 0px 10px;
+  }
+
+  .active {
+    background-color:#AC40A4;
+    color: white;
+  }
+
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-right: 8px;
+  }
+  #more {display: none;}
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+  .hide{display: none;}
+  .opp{display: block;}
+  .opa{opacity:0.5;transition:1s all ease-in-out}
+  .opa1{opacity: 1;transition:1s all ease-in-out }
+  .non{opacity:0;transition:1s all ease-in-out}
+  #img{
+  	border-radius:20px
+  }
+  div.third {
+    background-color: #AC40A4;
+  }
+ 
+  #event_tim{
+  	background-color:darkblue;margin-left:30px;width:200px;text-align: center;font-size:30px;border-radius:20px
+  }
+  .movie-list-container{padding:0px 20px;}
+		.movie-list{display:flex;align-items:center; height:350px;}
+		.movie-list-img{width:400px;height:300px;object-fit:cover;transition:all 1s ease-in-out; border-radius:15px}
+		.movie-list-item{margin-right: 30px;position:relative; }
+		.movie-list-item:hover .movie-list-img{transform:scale(1.2); margin:0px 30px; opacity:0.5}
+		.movie-title{background-color: #AC40A4; padding:0px 10px; font-size:20px; font-weight:bold;position:absolute;top:10%;left: 50px;opacity:1; transition:all 1s ease-in-out;}
+		.movie-list-descrip{background-color:#333; padding:0px 10px; font-size:17px;position:absolute;top:30%;left: 50px;opacity:0;width:330px;transition:all 1s ease-in-out}
+    .movie-list-descrip2{background-color:#333; padding:0px 10px; font-size:27px;position:absolute;top:30%;left: 50px;opacity:0;width:330px;transition:all 1s ease-in-out}
+		.movie-btn{background-color:#333; color:lightgreen; border-radius:10px;outline:none;position:absolute;bottom:-10px;left:200px;opacity:0;transition:all 1s ease-in-out;width:200px;height:50px;}
+		.movie-list-item:hover .movie-title,.movie-list-item:hover .movie-list-descrip,.movie-list-item:hover .movie-btn{opacity:1;}
+		.movie-list-wrapper{overflow-x: scroll;overflow-y:hidden; }
+		.expired{color:red}
+		#info{background-color:blue;padding:23px;width:40%;text-align: center;border-radius:10px;}
+    .info{font-size:31px;}
+		#info:hover{opacity: 0.5;transition:0.2s all ease-in-out;cursor: pointer;}
+ .avatar2 {
+    margin-top:100px
+    vertical-align: middle;
+    width: 450px;
+    height: 400px;
+    border-radius: 50%;
+  }
+  .avatar {
+    vertical-align: middle;
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  #xbtn{}
+  #xbtn:hover{background-color:red;padding:0px}
+ 
+  .mai{font-size:24px;color:white}
+ .logo{padding:20px 20px;font-size:70px;padding-bottom:}
+  .tex{width: 80%;padding-top:20px}
+  .logo1{font-size: 40px;}
+.q{font-size:20px}
+.q2{font-size: 50px}
+.act{font-size:20px}
+.act2{font-size:35px;}
+.size{font-size:50px}
+.pastor{margin-top: 150px}
+
+ </style>
+</head>
+
+ <body onload="print()" onscroll="getposition()" onresize="resize()" >
+ 	  <div id="main" style="background-color: #AC40A4;display: flex;position: fixed;margin-top:-10px;width:100%;transition: .5s all ease-in-out;    z-index: 1;" class="non">
+    <span style="cursor:pointer" onclick="openNav()" id="logo" class="logo1">&#9776;</span>
+    <div style="width: 70%;margin-left:10%;" id="tex">
+    <marquee><span  ><h2>ST SIMEON'S ANGLICAN CHURCH </span><span style="opacity:0">....................................................................................................................................</span><span> OUR OFFICIAL WEBSITE</h2></span></marquee>
+</div>
+  </div>
+
+
+    <div id="us" style="width:80%;background-color:#AC40A4;margin-left:10%;position:fixed;z-index:1;margin-top:100px;min-height:70%;border-radius:20px;box-shadow:0 0 15px 2px" class="hide">
+	<div  class="hide" id="pastor"><center>
+    <h1 id="size">Vicar In Charge</h1>
+  </center>
+  <center><img src="pastor.jpg" alt="Avatar" class="avatar" id="avatar"></center>
+  <br>
+  <center><h2 id="sizes">Rev Abiodun O Omotosho</h2></center></div>
+<div id="act" style="margin:20px;margin-top:60px;" class="hide act" >
+  <p>Located at <b>Plot 1 Block VII, Oba Afunbiowo Housing Estate Akure, Ondo State.</b> St Simeon's is a multi-cultural
+    community of people of all ages, celebrating christianity through christian education, outreach and worship.</p>
+  Whatever your background, you will find a warm welcome with us.
+  <p><b>Our weekly activities includes:</b></p>
+  1) Sunday morning worship is held by 8:30am at the church premises.
+  <p>2) We also have an evening house fellowship every Sunday evening at Dr Olowosusi's residence by 5:30pm.</p>
+  3) We also hold mid-week prayer meeting every wednesday by 5:30pm at the church premises.</div>
+
+</div>
+
+<div style="width: 50px" class="hide" id="x_but" onclick="close()">
+	   <img src="icon5.png" style="position: fixed;z-index: 1;top:100px;right:10%;border-top-right-radius:20px" class="" width="45" height="45" id="xbtn"  onclick="close()">
+</div>
+
+
+   <div class="bac_img" onclick="closeNav()" id="bac_img">
+   	<div id="style" style="margin-top:15% " >
+   	  <h1 id="col1" class="dis">ST SIMEON'S</h1>
+   	  <h1 id="col2" class="dis">ANGLICAN CHURCH</h1>
+   	  <hr / style="width: 80%;text-align:left;height:2px;margin-left:0px;background-color:white;" class="dis" id="lin">
+   	</div>
+   </div>
+
+
+<nav>
+  <div id="z" class="q">
+  <div id="mySidenav" class="sidenav" >
+
+    <button class="dropdown-btn">About
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="history.php">History</a>
+      
+    </div><hr />
+    <button class="dropdown-btn">Contact
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="contact.php">Contact Us</a>
+    </div><hr />
+    <button class="dropdown-btn">Department
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container" >
+      <a href="acm.php">Anglican Children Ministry</a>
+      <a href="ayf.php">Anglican Youth Fellowship</a>
+      <a href="choir.php">Choir</a>
+      <a href="gos.php">Guild Of Steward</a>
+      <a href="MF.php">Men Fellowship</a>
+      <a href="wo.php">Women Organisation</a>
+    </div><hr />
+    <button class="dropdown-btn">Gallery
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="pic.php">Pictures</a>
+    </div><hr />
+  </div></div>
+
+
+  
+</nav>
+<br onclick="closeNav()"><br onclick="closeNav()">
+<div id="sec" onclick="closeNav()" style="padding: 0px 20px">
+ <div class="movie-list-container" style="margin-bottom:50px">
+   	    <h1 class="movie-list-title">CHURCH EVENTS/PROGRAMMES</h1><hr / style="color: white"><br><br>
+   	    <div class="movie-list-wrapper"  usercardcontainer style="display: flex;">
+   	    	<template id="datauser" usercardtemplate >
+   	    	<div class="movie-list" class="cards" style="margin-right:20px">
+   	    		<div class="movie-list-item">
+   	    			<img src="" class="movie-list-img" data-img id="mag">
+   	    			<span class="movie-title" id="header" data-header></span>
+   	    			<p class="movie-list-descrip" id="descrip">Theme:<span data-theme id="topic"></span><br><br>Date:<span data-date id="dat">  </span><br><br>Venue:<span data-venue id="ven"></span></p>
+   	    	          <h2 class="movie-btn" data-time style="text-align:center;"></h2>
+   	    		</div>
+
+             </div>
+   	         </div>
+   	        </template>
+        </div>
+   </div>
+<div style="margin-top:80px;">	
+<h1>INFO ABOUT US:</h1>
+<p >
+    St Simeon's Anglican Church,Idanre, Akure, Ondo State, Nigeria, was established on 10th of January 2016.</p>
+    The Church is pragmatically committed to the development of her members in all ramifications.The Church is committed
+    to the wholistic teaching of our Lord Jesus Christ. Through these wholistic ministry, her members is been developed
+    both physically and spiritually.
+    The activities of the church includes: Sunday service by 8:30am, which is an English service
+    The weekly activities of the church are: Prayer meetings, bible study, Evangelism/Visitation and the Church Choir
+    rehearsal.
+    <span id="dots">...</span>
+    <span id="more">Members of the church are well commited to attending church programmes and
+      these reflects greatly in their positive response to God's work. The Church is involved in social programs like
+      caring and assistance to the needy people and also indigent students in tertiary institutions.
+      The church could be described as a living church where living stones are made for christ and not dead stones.
+    </span>
+  </p>
+  <center><h4 onclick="myFunction()" id="myBtn" style="text-decoration:underline;cursor: pointer;color: blue;">Read more</h4></center><br>
+
+<h2 id="info" class="btn1"> OUR VICAR</h2>
+<h2 id="info" class="btn2"> OUR CHURCH ACTIVITIES</h2>
+</div>
+
+</div>
+  <div class="third" onclick="closeNav()" id="third">
+    <center>
+      <h1>Contact Us</h1>
+    </center>
+    <center>
+      <p>Contact us for any information or update.</p>
+    </center>
+    <p>
+      <center>St Simeon's Anglican Church Oba Afunbiowo Housing Estate Akure</center>
+    </p>
+    <p>
+      <center>Ondo State Nigeria.</center>
+    </p>
+
+    <h4>
+      <center><img src="images/1608790_phone_icon.png" width="30" height="15">PHONE</center>
+    </h4>
+    <center>+2348032339445</center>
+
+    <h4>
+      <center><img src="images/Message-Silhouette-Transparent-Images.png" width="20" height="10">Email:</center>
+    </h4>
+    <center>stsimeonanglicanchurch@gmail.com</center>
+
+    <h4>
+      <center>SOCIAL CONNECTION</center>
+    </h4>
+    <h5>
+      <center>You can connect social area for any update</center>
+    </h5>
+    <center><img src="images/logo-facebookpng-32257(0).png" width="40" height="20"><img
+        src="images/580b57fcd9996e24bc43c521-1.png" width="40" height="20"><img
+        src="images/icons8-twitter-circled-480.png" width="40" height="20"></center>
+
+    <center>
+      <td align="center">&copy;2022 ST SIMEON'S ANGLICAN CHURCH OBA AFUNBIOWO HOUSING ESTATE AKURE.</td>
+    </center>
+  </div>
+</div>
+
+
+
+
+ </body>
+
+ <script type="text/javascript">
+ 	let fo=document.getElementById('col1')
+ 	let fov=document.getElementById('col2')
+  let lin=document.getElementById('lin')
+  let sec=document.getElementById('sec')
+  let bac_img=document.getElementById('bac_img')
+  let main=document.getElementById('main')
+  let pos= -500
+const info_btn=document.querySelectorAll('#info')
+let pastor=document.querySelector('#pastor')
+let act=document.getElementById('act')
+let us=document.getElementById('us')
+let x_but=document.getElementById('x_but')
+let btn1=document.querySelector('.btn1')
+let btn2=document.querySelector('.btn2')
+let z=document.getElementById('z')
+let avatar=document.getElementById('avatar')
+let size=document.querySelector('#size')
+
+
+// its like the mediaqueries were'nt working so dis function helps me to do its work
+function resize(){
+  let third=document.querySelector('#third')
+  let tex=document.getElementById('tex')
+  let logo=document.getElementById('logo')
+  let descrip=document.getElementById('descrip')
+
+  if(window.innerWidth<=982 && window.innerHeight>=1200){
+tex.classList.add('tex')
+logo.classList.add('logo')
+main.classList.add('mai')
+logo.classList.remove('logo1')
+btn1.classList.add('info')
+btn2.classList.add('info')
+z.classList.add('q2')
+z.classList.remove('q')
+act.classList.add('act2')
+act.classList.remove('act')
+avatar.classList.add('avatar2')
+avatar.classList.remove('avatar')
+size.classList.add('size')
+sizes.classList.add('size')
+pastor.classList.add('pastor')
+  }
+else{
+tex.classList.remove('tex')
+logo.classList.remove('logo')
+main.classList.remove('mai')
+logo.classList.add('logo1')
+btn1.classList.remove('info')
+btn2.classList.remove('info')
+z.classList.remove('q2')
+z.classList.add('q')
+act.classList.add('act')
+act.classList.remove('act2')
+avatar.classList.remove('avatar2')
+avatar.classList.add('avatar')
+size.classList.remove('size')
+sizes.classList.remove('size')
+pastor.classList.remove('pastor')
+  }
+}
+
+
+
+programmes=[
+{
+	   event:"ANNUAL THANKSGIVING",
+       theme:"THE LORD IS GOOD",
+       date:"December 19th 2022",
+       time:"Dec 19, 2022 10:00:00",
+       venue:"CHURCH HALL",
+       img:"test.png",//put in ur first programme pics here
+       end_date:"Dec 19, 2022 17:00:00",
+       state:"upcoming",
+},
+{
+	   event:"30 DAYS FASTING & PRAYER",
+       theme:"ENTERING HIS REST",
+       date:"January 19th - febuary 18 2023",
+       time:"Jan 19, 2023 00:00:00",
+       venue:"CHURCH HALL",
+       img:"holy.jpg",//put in ur second programme pics here
+       end_date:"Feb 18,, 2023 00:00:00",
+       state:"upcoming",
+},
+{
+	   event:"YOUTH & TEENS DAY",
+       theme:"YOUTH ABLAZE",
+       date:"febuary 19th 2023",
+       time:"Feb 19, 2023 08:00:00",
+       venue:"CHURCH HALL",
+       img:"dada.jpg",//put in ur third programme pics here
+       end_date:"Feb 19, 2023 12:00:00",
+       state:"upcoming",
+},
+{
+	   event:"WORSHIP EXPERIENCE",
+       theme:"IN HIS PRESENCE",
+       date:"January 5th 2023",
+       time:"Jan 5, 2023 20:00:00",
+       venue:"CHURCH HALL",
+       img:"worship.jpg",//put in ur fourth programme pics here
+       end_date:"Jan 6, 2023 01:00:00",
+       state:"upcoming",
+},//you can also add more events by duplicating an object and editing the contents
+{
+	   event:"STATE CONFERENCE",
+       theme:"ENTERING HIS REST",
+       date:"July 15th-17th 2023",
+       time:"July 15, 2023 00:00:00",
+       venue:"CHURCH HALL",
+       img:"praise.jpg",//put in ur fourth programme pics here
+       end_date:"July 17, 2023 12:00:00",
+       state:"upcoming",
+},
+]
+x_but.addEventListener('click',()=>{
+us.classList.add('hide')
+us.classList.remove('opp')
+x_but.classList.add('hide')
+x_but.classList.remove('opp')
+})
+
+info_btn.forEach((btn,i)=>{btn.addEventListener('click' ,()=>{
+	if(btn.textContent===" OUR VICAR"){
+		us.classList.remove('hide')
+		us.classList.add('opp')
+		x_but.classList.remove('hide')
+		x_but.classList.add('opp')
+		act.classList.add('hide')
+		act.classList.remove('opp')
+		pastor.classList.add('opp')
+		pastor.classList.remove('hide')
+	}else{
+		x_but.classList.remove('hide')
+		x_but.classList.add('opp')
+       us.classList.remove('hide')
+		us.classList.add('opp')
+		act.classList.add('opp')
+		act.classList.remove('hide')
+		pastor.classList.add('hide')
+		pastor.classList.remove('opp')
+      }
+})
+})
+	
+
+
+
+const usercardcontainer=document.querySelector('[usercardcontainer]')
+const usercardtemplate=document.querySelector('[usercardtemplate]')
+programmes.map(users=>{
+	const card=usercardtemplate.content.cloneNode(true).children[0]
+	const header=card.querySelector('[data-header]')
+	const topic=card.querySelector('[data-theme]')
+	const venue=card.querySelector('[data-venue]')
+	const dat=card.querySelector('[data-date]')
+	const pics=card.querySelector('[data-img]')
+    const data_time=card.querySelector('[data-time]')
+
+	header.textContent=users.event
+	topic.textContent=users.theme
+	venue.textContent=users.venue
+	dat.textContent=users.date
+	pics.src=users.img
+    
+      var countDownDate = new Date(users.time).getTime();
+      var duration=new Date(users.end_date).getTime()
+      var x = setInterval(function () {
+     
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+        let end=duration-now
+    
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        data_time.innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+
+         if (distance<0 && end>0){
+           clearInterval(x);
+          data_time.innerHTML = "ONGOING";
+        }
+
+       else  if (distance < 0 && end < 0) {
+          clearInterval(x);
+          data_time.innerHTML = "*EXPIRED*";
+          data_time.classList.add('expired')
+          users.state="expired"
+                  }
+
+       
+      }, 1000);
+       
+usercardcontainer.append(card)
+
+})
+
+
+function getposition(){
+	let rect=bac_img.getBoundingClientRect()
+	if(rect.y<=pos){
+		main.classList.add('opa')
+      main.classList.add('opa1')
+      main.classList.remove('non')
+      prin()
+	}
+	else if(rect.y>pos){
+      main.classList.remove('opa1')
+      main.classList.add('opa')
+     main.classList.add('non')
+     print()
+	}
+   }
+
+          function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+ 	function print(){	
+	fo.classList.add('sho')
+	fov.classList.add('sho')
+	fo.classList.remove('dis')
+	fov.classList.remove('dis')
+    lin.classList.add('sho')
+    lin.classList.remove('dis')
+      resize()
+  }
+  function prin(){	
+	fo.classList.remove('sho')
+	fov.classList.remove('sho')
+	fo.classList.add('dis')
+	fov.classList.add('dis')
+    lin.classList.remove('sho')
+    lin.classList.add('dis')
+  }
+  function openNav() {
+   if(window.innerWidth>982){ document.getElementById("mySidenav").style.width = "350px";
+    bac_img.classList.add('opa')
+     sec.classList.add('opa')
+      main.classList.add('opa')
+       document.querySelector(".third").classList.add('opa')}
+      else if(window.innerWidth<=982){
+    document.getElementById("mySidenav").style.width = "60%";
+    bac_img.classList.add('opa')
+     sec.classList.add('opa')
+      main.classList.add('opa')
+       document.querySelector("#third").classList.add('opa')
+      }
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "#151515";
+    bac_img.classList.remove('opa')
+    sec.classList.remove('opa')
+    main.classList.remove('opa')
+     document.querySelector("#third").classList.remove('opa')
+      }
+	let sto=document.getElementById('sto')
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+       
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+  }
+  
+ </script>
+ 

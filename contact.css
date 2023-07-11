@@ -1,0 +1,46 @@
+#contact {
+    color: hsl(256, 26%, 20%);  
+    margin-bottom: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 2rem;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#contact form input, #contact form textarea {
+    max-width: 40rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.input-side {
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact form input {
+    height: 2.5rem;
+}
+
+#contact form button {
+    align-self: flex-start;
+    padding: 0.5rem;
+    color: lightslategray;
+    border: 1px solid lightslategray;
+    font-weight : 900;
+}
+
+#contact form button:hover {
+    background-color: lightslategray;
+    color: white;
+}

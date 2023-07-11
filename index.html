@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sidenav.css">
+  <link rel="stylesheet" href="swiper.css">
+  <link rel="stylesheet" href="footer.css">
+  <title>St Simeon Website</title>
+</head>
+
+<body onload="print()" onscroll="getposition()" onresize="resize()">
+  <div id="main" class="non">
+    <nav>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <button class="dropdown-btn">About
+          <hr>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="history.html">History</a>
+        </div>
+        <button class="dropdown-btn">Contact
+          <hr>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <button class="dropdown-btn">Department
+          <hr>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="acm.html">Anglican Children Ministry</a>
+          <a href="ayf.html">Anglican Youth Fellowship</a>
+          <a href="choir.html">Choir</a>
+          <a href="gos.html">Guild Of Steward</a>
+          <a href="mf.html">Men Fellowship</a>
+          <a href="wo.html">Women Organisation</a>
+        </div>
+        <button class="dropdown-btn">Gallery
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="gallery.html">Pictures</a>
+        </div>
+      </div>
+
+      <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+
+    </nav>
+    <div style="width: 70%;margin-left:10%;" id="tex">
+      <marquee><span>
+          <h2>ST SIMEON'S ANGLICAN CHURCH
+        </span><span
+          style="opacity:0">....................................................................................................................................</span><span>
+          OUR OFFICIAL WEBSITE</h2></span></marquee>
+    </div>
+  </div>
+
+  <div class="display_img">
+    <div class="bac_img" onclick="closeNav()" id="bac_img"></div>
+    <div id="style">
+      <h1 id="col1" class="dis">ST SIMEON'S</h1>
+      <h1 id="col2" class="dis">ANGLICAN CHURCH</h1>
+      <hr class="dis" id="lin">
+    </div>
+  </div>
+
+  <div class="page-content">
+    <h1>WHO ARE WE</h1>
+    <p>
+      Located at <br>
+      <b>Plot 1 Block VII, Oba Afunbiowo Housing Estate Akure, Ondo State.</b> 
+      St Simeon's is a multi-cultural community of people of all ages, 
+      celebrating christianity through christian education, outreach and worship.
+    </p>
+    
+    <p>
+      Whatever your background, you will find a warm welcome with us.
+    </p>
+    <h3>Our weekly activities includes:</h3>
+    <ol>
+      <li>
+        Sunday morning worship is held by 8:30am at the church premises.
+      </li>
+      <li>
+        We also have an evening house fellowship every Sunday evening at Dr Olowosusi's residence by 5:30pm.
+      </li>
+      <li>
+        We also hold mid-week prayer meeting every wednesday by 5:30pm at the church premises.
+      </li>
+    </ol>
+  </div>
+
+  <section id="programme">
+    <h1>Worship With Us!</h1>
+
+    <div class="swiper program">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/img-1.jpg" loading="lazy"/>
+
+            <div class="program-text">
+              <h1>WELCOME</h1>
+              <h2>TO</h2>
+              <h3>ST SIMEON'S ANGLICAN CHURCH<br></h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/img-2.jpg" loading="lazy"/>
+
+            <div class="program-text">
+              <h1>BIBLE STUDY AND PRAYER MEETING</h1>
+              <h2>WEDNESDAY</h2>
+              <h3>5:30PM - 6:30PM</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/img-4.jpg" loading="lazy"/>
+
+            <div class="program-text">
+              <h1>SUNDAY SERVICE</h1>
+              <h2>SUNDAYS</h2>
+              <h3>8:30AM - 10:30PM</h3>
+            </div>
+          </div>
+      </div>
+
+      <span class="swiper-button-next"></span>
+      <span class="swiper-button-prev"></span>
+      <span class="swiper-pagination"></span>
+    </div>
+  </section>
+
+  <div class="page-content">
+    <h1>Meet Our Vicar</h1>
+
+    <h3>Rev Abiodun O Omotosho</h3>
+  
+    <p>
+      St Simeon's Anglican Church,Idanre, Akure, Ondo State, Nigeria, was established on 10th of January 2016.
+      The Church is pragmatically committed to the development of her members in all ramifications.The Church is committed
+      to the wholistic teaching of our Lord Jesus Christ. Through these wholistic ministry, her members is been developed
+      both physically and spiritually.
+      The activities of the church includes: Sunday service by 8:30am, which is an English service
+      The weekly activities of the church are: Prayer meetings, bible study, Evangelism/Visitation and the Church Choir
+      rehearsal.
+    </p>
+    
+    <a href="vicar.html" class="vicar-btn">Read more</a>
+  
+  </div>
+
+  
+  <div class="first">
+    <h1>Upcoming Event</h1>
+    Annual General Thanksgiving
+    19/11/2023
+  </div>
+
+  <div class="third">
+    <h1>
+      <p id="demo"></p>
+    </h1>
+  </div>
+
+
+    <footer>
+      <div class="bottom">
+        <h2>JOIN NEWSLETTER</h2>
+        <form class="subscribe-form">
+          <input class="email" type="text" placeholder="Enter your email Address ..."/>
+          <!-- <input type="submit" class="vicar-btn" value="Subscribe"> -->
+          <button type="submit" class="vicar-btn">Subscribe</button>
+        </form>
+      </div>
+
+      
+      <div class="second">
+      
+        <h1>Contact Us</h1>
+        <p>Contact us for any information or update.</p>
+        <p>St Simeon's Anglican Church, Oba Afunbiowo Housing Estate Akure.</p>
+        <p>Ondo State, Nigeria.</p>
+      
+        <div class="social-contacts">
+          <div class="phone">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+2348032339445">+234 803 233 9445</a>
+          </div>
+          <div class="mail">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:stsimeonanglicanchurch@gmail.com">stsimeonanglicanchurch@gmail.com</a>
+          </div>
+        </div>
+      
+        <h4>SOCIAL CONNECTION</h4>
+        <h5>You can also connect social area for any update.</h5>
+      
+      
+        <div class="social-icons">
+          <a href="">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="">
+              <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="">
+              <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+        
+        <hr>
+      
+        <td align="center">&copy;2023 ST SIMEON'S ANGLICAN CHURCH OBA AFUNBIOWO HOUSING ESTATE AKURE.</td>
+      
+      </div>
+
+    </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./sidenav.js"></script>
+  <script src="./script.js"></script>
+  <script src="./time.js"></script>
+  <script src="./swiper.js"></script>
+  <script src="./footer.js"></script>
+
+</body>
+
+</html>

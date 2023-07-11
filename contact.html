@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidenav.css">
+    <link rel="stylesheet" href="swiper.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+</head>
+<body>
+  <div id="main" class="non" style="display: flex !important;">
+    <nav>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a> <hr style="width: 226px; align-self: center;">
+        <button class="dropdown-btn">About
+          <hr>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="history.html">History</a>
+        </div>
+        <button class="dropdown-btn">Contact
+          <hr>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <button class="dropdown-btn">Department
+          <hr>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="acm.html">Anglican Children Ministry</a>
+          <a href="ayf.html">Anglican Youth Fellowship</a>
+          <a href="choir.html">Choir</a>
+          <a href="gos.html">Guild Of Steward</a>
+          <a href="mf.html">Men Fellowship</a>
+          <a href="wo.html">Women Organisation</a>
+        </div>
+        <button class="dropdown-btn">Gallery
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="gallery.html">Pictures</a>
+        </div>
+      </div>
+
+      <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+
+    </nav>
+    <div style="width: 70%;margin-left:10%;" id="tex">
+      <marquee><span>
+          <h2>ST SIMEON'S ANGLICAN CHURCH
+        </span><span
+          style="opacity:0">....................................................................................................................................</span><span>
+          OUR OFFICIAL WEBSITE</h2></span></marquee>
+    </div>
+  </div>
+    
+    <div id='contact' class='modal-content'>
+        <h1>CONTACT US</h1>
+        <p>
+          DO YOU NEED PRAYER OR COUNSELLING? SEND US A MESSAGE.
+        </p>
+  
+          <form action='https://formsubmit.co/stsimeonanglicanchurch@gmail.com' method='POST'>
+            <input type='text' name='sender_name' placeholder='Full Name' required />
+            <div class="input-side">
+              <input type='email' name='sender_email' placeholder='Email'  required/>
+              <input type='number' name='sender_number' placeholder='Phone Number' required/>
+            </div>
+            <textarea name='sender_message' cols='30' rows='10' placeholder='Message' required>
+            </textarea>
+            <button type='submit'>SEND</button>
+          </form>
+    </div>
+
+    <footer>
+        <div class="bottom">
+          <h2>JOIN NEWSLETTER</h2>
+          <form>
+            <input type="text" placeholder="Enter your email Address ...">
+            <button type="submit" class="vicar-btn">Subscribe</button>
+          </form>
+        </div>
+  
+        
+        <div class="second">
+        
+          <h1>Contact Us</h1>
+          <p>Contact us for any information or update.</p>
+          <p>St Simeon's Anglican Church, Oba Afunbiowo Housing Estate Akure.</p>
+          <p>Ondo State, Nigeria.</p>
+        
+          <div class="social-contacts">
+            <div class="phone">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+2348032339445">+234 803 233 9445</a>
+            </div>
+            <div class="mail">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:stsimeonanglicanchurch@gmail.com">stsimeonanglicanchurch@gmail.com</a>
+            </div>
+          </div>
+        
+          <h4>SOCIAL CONNECTION</h4>
+          <h5>You can also connect social area for any update.</h5>
+        
+        
+          <div class="social-icons">
+            <a href="">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+          
+          <hr>
+        
+          <td align="center">&copy;2023 ST SIMEON'S ANGLICAN CHURCH OBA AFUNBIOWO HOUSING ESTATE AKURE.</td>
+        
+        </div>
+  
+    </footer>
+
+  <script src="./sidenav.js"></script>
+  <script src="./script.js"></script>
+
+</body>
+</html>
